@@ -347,14 +347,6 @@ int CreateFile(char *name,int permission)
  return i;
 }
 
-/*
-break;
-
-total-free
-
-
-
-*/
 
 ////////////////////////////////////////////
 //
@@ -447,11 +439,6 @@ void Delete(char *name)
   obj_super.FreeInode++;
 }
 
-/*
-
-create kartana cha permissions ani open kartana cha permisiion check kara
-
-*/
 ////////////////////////////////////////////
 //
 //function name:	open
@@ -1001,7 +988,7 @@ int main()
  char arr[50];
  while(1)
  {
-  printf("\nmarvellous vfs:>");
+  printf("\vfs:>");
   //fgets(str,80,stdin);
   //fflush(stdin);
   scanf(" %[^'\n']s",str);
@@ -1041,7 +1028,7 @@ int main()
     printf("command not found\n");
    }
   }
-  else if(count==2)    //man ani command cha nav
+  else if(count==2)    
   {
    if(strcmp(command[0],"man")==0)
    {
@@ -1123,7 +1110,7 @@ int main()
    }
    
   }
-  else if(count==3)          //3 word ahet   create demo.c 6  -> command file_name permission
+  else if(count==3)         
   { 
    if(strcmp(command[0],"create")==0)
    {
@@ -1172,10 +1159,10 @@ int main()
     }
    }
   
-  /*else 
+  else 
   {
    printf("bad command or file name\n");
-  }*/
+  }
    
  }
  
